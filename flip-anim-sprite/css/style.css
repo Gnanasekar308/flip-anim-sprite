@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 92px;
+    height: 140px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: solid 2px black;
+}
+#bgimg{
+    position: relative;
+    width: 736px;
+    height: 140px;
+    animation-name: flip;
+    animation-duration: 3s;
+    animation-timing-function: steps(8);
+    animation-iteration-count: infinite;
+    transform: translateX(0px);
+}
+@keyframes flip{
+    100%{transform: translateX(-2208px);}
+}
+#img1{
+    position: absolute;
+    top: 0px;
+    left: -31px;
+}
+#img2{
+    position: absolute;
+    top: -141px;
+    left: 736px;
+}
+#img3{
+    position: absolute;
+    top: -254px;
+    left: 1472px;
+}
